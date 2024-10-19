@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="term-content"></div> <!-- Where the markdown content will be displayed -->
+        <div id="term-navigation">
+            <button id="prev-term">Previous</button>
+            <button id="next-term">Next</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Function to fetch and render markdown content
+        async function loadMarkdown(termName) {
+            let firstLetter = termName.charAt(0).toLowerCase();  // Get the first letter of the term
+            let response = await fetch(`terms/${firstLetter}/${termName}.md`);  // Construct the path
+
+            if (response.ok) {
+                let markdown = await response.text();
+                document.getElementById('term-content').innerHTML = marked.parse(markdown);
+            } else {
+                document.getElementById('term-content').innerHTML = 'Term not found.';
+            }
+        }
+
+        // Get the term name from URL
+        let params = new URLSearchParams(window.location.search);
+        let termName = params.get('term');
+
+        // Load the corresponding markdown file
+        loadMarkdown(termName);
+    </script>
+</body>
+
+</html>
