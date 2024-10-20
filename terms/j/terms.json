@@ -1,1 +1,4 @@
-[\n  "Java"\n]
+[
+  { "term": "j" },
+  { "term": "java" }
+]
