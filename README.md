@@ -26,8 +26,8 @@ tech-terms-search/
 │   │   ├── blog.md          # Markdown file for the term "Blog"
 │   │   └── terms.json       # JSON file listing all terms starting with "B"
 │   └── ...                  # Additional alphabetic folders for terms
-├── src/                     # Source folder for the Java automation script
-│   └── AddTerm.java         # Java program for automating term addition
+├── src/                     # Source folder 
+├── AddTerm.java         # Java program for automating term addition
 └── README.md                # This file
 ```
 
