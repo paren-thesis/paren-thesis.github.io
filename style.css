@@ -21,10 +21,16 @@ body {
   max-width: 600px;
 }
 
+.searched{
+  text-align: start;
+  width: 100%;
+  max-width: 600px;
+}
+
 header h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #4285f4;
+  color: #1316cf;
 }
 
 .search-box {
@@ -56,14 +62,14 @@ header h1 {
   font-size: 1rem;
   border: none;
   border-radius: 25px;
-  background-color: #4285f4;
+  background-color: #335cce;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .search-box button:hover {
-  background-color: #353535;
+  background-color: #2cb633;
 }
 
 ul {
