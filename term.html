@@ -12,10 +12,10 @@
 
     <div class="searched">
         <div id="term-content"></div> <!-- Where the markdown content will be displayed -->
-        <div id="term-navigation">
+        <!-- <div id="term-navigation">
             <button id="prev-term">Previous</button>
             <button id="next-term">Next</button>
-        </div>
+        </div> -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -29,7 +29,7 @@
                 let markdown = await response.text();
                 document.getElementById('term-content').innerHTML = marked.parse(markdown);
             } else {
-                document.getElementById('term-content').innerHTML = 'Term not found.';
+                document.getElementById('term-content').innerHTML = 'Term Description Not Available';
             }
         }
 
