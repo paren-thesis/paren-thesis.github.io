@@ -1,5 +1,5 @@
 
-# Tech Terms Search
+# Nersh
 
 Tech Terms Search is a simple web project hosted on GitHub Pages that allows users to search for technology-related terms and view their definitions. The project uses Markdown files to store each term's definition, and the terms are organized in a directory structure based on the first letter of each term. Users can navigate between terms using "next" and "previous" buttons on the definition pages.
 
@@ -142,7 +142,7 @@ The search functionality allows users to type in a tech term, and it filters the
 
 ## Hosting
 
-This project is hosted on GitHub Pages. All files, including HTML, CSS, and JavaScript, are stored in the repository. You can access the live site at: [TTS](https://paren-thesis.github.io).
+This project is hosted on GitHub Pages. All files, including HTML, CSS, and JavaScript, are stored in the repository. You can access the live site at: [Nersh](https://paren-thesis.github.io).
 
 ## Contributing
 
